@@ -68,7 +68,7 @@ class Base(object):
     def get_last_error(self):
         """Returns last error string.
         """
-        return ffi.string(self.lib_.tjGetErrorStr()).decode("utf-8")
+        return jpeg.ffi.string(self.lib_.tjGetErrorStr()).decode("utf-8")
 
 
 class Handle(Base):
